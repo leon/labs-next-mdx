@@ -1,0 +1,35 @@
+{
+  "React Component": {
+    "prefix": "rc",
+    "body": [
+      "export interface ${1:ComponentName}Props {",
+      "}",
+      "export function ${1}({}: ${1}Props) {",
+      "\treturn <div>${1}</div>",
+      "}",
+      "$2"
+    ],
+    "description": "React Component"
+  },
+
+  "React Component with children": {
+    "prefix": "rcc",
+    "body": [
+      "import { ReactNode } from 'react'",
+      "",
+      "export interface ${1:ComponentName}Props {",
+      "\tchildren: ReactNode",
+      "}",
+      "export function ${1}({ children }: ${1}Props) {",
+      "\treturn <div>{children}</div>",
+      "}",
+      "$2"
+    ],
+    "description": "React Component that has children"
+  },
+  "React Component Simple": {
+    "prefix": "rcs",
+    "body": ["export function ${1}() {", "\treturn <div>${1}</div>", "}", "$2"],
+    "description": "React Component without props"
+  }
+}
